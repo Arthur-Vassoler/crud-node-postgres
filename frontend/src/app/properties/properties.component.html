@@ -1,0 +1,17 @@
+<h2>Cadastrar Propriedades</h2>
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="input-group">
+        <p><b>Endereço: * </b> <input type="text" id="endereco" name="endereco" [(ngModel)]="propertie.address"></p>
+        <p><b>Título: * </b> <input type="text" id="titulo" name="titulo" [(ngModel)]="propertie.title"></p>
+        <p>Tipo: <input type="number" name="type" id="type"  [(ngModel)]="propertie.type"></p>
+        <p>Quartos: <input type="number" name="bedrooms" id="bedrooms" [(ngModel)]="propertie.bedrooms"></p>
+        <p>Suítes: <input type="number" name="suites" id="suites" [(ngModel)]="propertie.suites"></p>
+        <p><b>Descrção: * </b> <textarea name="description" id="description" [(ngModel)]="propertie.description" cols="30" rows="10"></textarea></p>
+        
+        <button type="button" (click)="addProperties()">Cadastrar</button>
+      </div>
+    </div>
+  </form>
+</div>

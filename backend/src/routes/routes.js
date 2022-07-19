@@ -5,7 +5,8 @@ const SaleController = require('../controllers/SaleController');
 const routes = express.Router();
 
 //Properties
-routes.get('/properties/', PropertieController.index);
+routes.get('/properties', PropertieController.index);
+routes.get('/properties/:propertie_id', PropertieController.findPropertie);
 routes.post('/properties', PropertieController.store);
 routes.delete('/properties/:propertie_id', PropertieController.delete);
 routes.put('/properties/:propertie_id', PropertieController.update);

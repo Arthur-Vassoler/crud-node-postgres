@@ -8,6 +8,14 @@ module.exports = {
     return res.json(propertie);
   },
 
+  async findPropertie(req, res) {
+    const { propertie_id } = req.params;
+
+    const propertie = await Propertie.findByPk(propertie_id);
+
+    return res.json(propertie);
+  },
+
   async store(req, res) {
     const { address, title, type, bedrooms, suites, description } = req.body;
 

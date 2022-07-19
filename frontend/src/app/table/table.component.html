@@ -1,0 +1,31 @@
+<h2>Propriedades Cadastradas</h2> <br>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Endereço</th>
+    <th>Título</th>
+    <th>Tipo ( Venda / Alugel )</th>
+    <th>Quartos</th>
+    <th>Suítes</th>
+    <th>Descricão</th>
+    <th>Editar</th>
+    <th>Deletar</th>
+  </tr>
+
+  <tr *ngFor="let properties of propertiess">
+    <td>{{ properties.id }}</td>
+    <td>{{ properties.address }}</td>
+    <td>{{ properties.title }}</td>
+    <td>{{ properties.type }}</td>
+    <td>{{ properties.bedrooms }}</td>
+    <td>{{ properties.suites }}</td>
+    <td>{{ properties.description }}</td>
+
+    <td>
+      <button (click)="updateProperties(properties)"><i class="material-icons">delete</i></button>
+    </td>
+    <td>
+      <button (click)="deleteProperties(properties.id)"><i class="material-icons">delete</i></button>
+    </td>
+  </tr>
+</table>

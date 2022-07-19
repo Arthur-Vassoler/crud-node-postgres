@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/create']" routerLinkActive="router-link-active"><i class="fas fa-tachometer-alt"></i>Adicionar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/delete"><i class="far fa-address-book"></i>Deletar</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/update" [routerLink]="['/update']" routerLinkActive="router-link-active">Atualizar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <app-root></app-root>
+
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+          <a href="https://www.instagram.com/arthur_vassoler_/"><i class="icon ion-social-instagram"></i></a>
+          <a href="www.linkedin.com/in/arthur-vassoler"><i class="icon ion-social-linkedin"></i></a>
+        </div>
+        <p class="copyright">Desenvolvido por Arthur Heck Vassoler © 2022 </p>
+    </footer>
+  </div>
+</body>
+</html>
